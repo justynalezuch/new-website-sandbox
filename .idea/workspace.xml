@@ -13,8 +13,13 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1yJ31bva2NwzPxKG94uiRFmfdQM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -75,11 +80,28 @@
       <workItem from="1632319283349" duration="871000" />
       <workItem from="1632325974963" duration="1794000" />
       <workItem from="1632327805995" duration="1514000" />
-      <workItem from="1632387502278" duration="1484000" />
+      <workItem from="1632387502278" duration="1942000" />
+      <workItem from="1632389489659" duration="618000" />
+      <workItem from="1632403121680" duration="1780000" />
+      <workItem from="1632404932934" duration="1654000" />
+      <workItem from="1632406769304" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

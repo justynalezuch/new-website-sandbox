@@ -1,5 +1,5 @@
 $green: #96BE3C;
-$gray: #5A5A5A;
+$gray: #5a5a5a ;
 $orange: #F44708;
 $darkGray: #564946;
 
@@ -198,14 +198,6 @@ body {
   }
 }
 
-.ball {
-  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  position: relative;
-}
-
 .what-can-we-design-section {
   h2 {
     color: $gray;
@@ -235,27 +227,55 @@ body {
 }
 
 .trusted-us-section {
+  h2 {
+    color: #fff;
+    font-weight: 900;
+    line-height: 8vw;
+    // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+    font-size: calc(40px + 140 * ((100vw - 320px) / 1480));
+    margin-bottom: calc(-15px - 1.7vw);
+
+    @media screen and (min-width: 1800px) {
+      font-size: 180px;
+      //margin-bottom: -45px;
+    }
+  }
   .block {
     background: linear-gradient(132.82deg, rgba(255, 255, 255, 0.18) 1.6%, rgba(255, 255, 255, 0.12) 53.49%, rgba(255, 255, 255, 0.06) 97.44%);
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, .3);
-    //max-width: 150px;
     height: 150px;
     width: 150px;
     margin: 25px;
+    backdrop-filter: blur(10px); // todo: firefox, IE support?
     //border-image-source: linear-gradient(226.84deg, #FFFFFF 4.54%, rgba(255, 255, 255, 0.2) 61.74%);
     //height: 150px;
     //width: 150px;
+
+    &:hover {
+      .color {
+        display: block;
+      }
+      .placeholder {
+        display: none;
+      }
+    }
+
+    .color {
+      display: none;
+    }
   }
 }
 
-.block-2 {
-  width: 190px;
-  height: 230px;
-  margin: 30px;
+.ball {
+  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
 }
-
 // ==== UIkit overrides ====
 .uk-slider-container, .uk-slideshow-items, .uk-slideshow-items>* {
   overflow: visible;
