@@ -1,4 +1,5 @@
 $green: #96BE3C;
+$dark-green: #235001;
 $gray: #5a5a5a ;
 $orange: #F44708;
 $darkGray: #564946;
@@ -6,10 +7,14 @@ $darkGray: #564946;
 $large-screen-width: 2000px;
 $medium-screen-width: 1000px;
 
+
 body {
-  background-color: $green;
   color: white;
   overflow-x: hidden;
+
+  //todo: fit background
+  background: url('img/bcg.svg') top no-repeat , url('img/bcg 2.svg') bottom no-repeat;
+  background-size: cover;
 }
 
 .hero-section {
@@ -269,23 +274,142 @@ body {
   }
 }
 
+.contact-us-section {
+
+  h2 {
+    color: $gray;
+    font-weight: bold;
+    font-size: calc(24px + 16 * ((100vw - 320px) / 680));
+
+    @media screen and (min-width: $medium-screen-width) {
+      font-size: 40px;
+    }
+
+    span {
+      color: #fff;
+      font-weight: 900;
+      font-size: calc(40px + 50 * ((100vw - 320px) / 680));
+      line-height: 100%;
+
+      @media screen and (min-width: $medium-screen-width) {
+        font-size: 90px;
+      }
+    }
+  }
+
+
+  .invalid-feedback {
+    font-size: 12px;
+    color: $dark-green;
+    padding-left: 20px;
+  }
+
+  .uk-position-relative {
+
+    input, textarea {
+      color: $dark-green;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      backdrop-filter: blur(25px);
+      border-radius: 10px;
+
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+
+      &:focus, &:not(:placeholder-shown) {
+        padding-top: 15px;
+
+        & + label {
+          color: $orange;
+          opacity: .65;
+          transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+
+      &:focus, &:active {
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 4px 70px rgba(255, 255, 255, 0.9);
+      }
+
+      &.is-invalid {
+
+        border: 2px solid #E91400;
+        padding-right: calc(1.5em + .75rem);
+        background-image: url('img/icons/form-error-icon.svg');
+        background-repeat: no-repeat;
+        background-position: right calc(.375em + .1875rem) center;
+        background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+        & + label {
+          color: $dark-green;
+        }
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      height: 100%;
+      padding: 16px;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+      color: #fff;
+    }
+  }
+
+  input[type="checkbox"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+
+    &:checked {
+      background-color: transparent;
+    }
+
+    & + label {
+      font-size: 12px;
+      margin-top: -6px;
+    }
+  }
+
+  button {
+    background: linear-gradient(263.02deg, #F44708 37.26%, #BB0000 100.28%);
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    border-radius: 16px;
+    backdrop-filter: blur(25px);
+  }
+}
+
+footer {
+  border-top: 3px solid #fff;
+}
 .ball {
-  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  position: relative;
+box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
+width: 60px;
+height: 60px;
+border-radius: 50%;
+position: relative;
 }
 // ==== UIkit overrides ====
 .uk-slider-container, .uk-slideshow-items, .uk-slideshow-items>* {
-  overflow: visible;
+overflow: visible;
 }
 
 .uk-cover {
-  left: 22%;
+left: 22%;
 }
 
 a:hover {
-  color: rgba(255, 255, 255, .7)
+color: rgba(255, 255, 255, .7)
 }
 

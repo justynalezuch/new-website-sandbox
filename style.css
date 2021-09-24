@@ -1,7 +1,8 @@
 body {
-  background-color: #96BE3C;
   color: white;
   overflow-x: hidden;
+  background: url("img/bcg.svg") top no-repeat, url("img/bcg 2.svg") bottom no-repeat;
+  background-size: cover;
 }
 
 .hero-section {
@@ -229,6 +230,106 @@ body {
 }
 .trusted-us-section .block .color {
   display: none;
+}
+
+.contact-us-section h2 {
+  color: #5a5a5a;
+  font-weight: bold;
+  font-size: calc(24px + 16 * ((100vw - 320px) / 680));
+}
+@media screen and (min-width: 1000px) {
+  .contact-us-section h2 {
+    font-size: 40px;
+  }
+}
+.contact-us-section h2 span {
+  color: #fff;
+  font-weight: 900;
+  font-size: calc(40px + 50 * ((100vw - 320px) / 680));
+  line-height: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .contact-us-section h2 span {
+    font-size: 90px;
+  }
+}
+.contact-us-section .invalid-feedback {
+  font-size: 12px;
+  color: #235001;
+  padding-left: 20px;
+}
+.contact-us-section .uk-position-relative input, .contact-us-section .uk-position-relative textarea {
+  color: #235001;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  backdrop-filter: blur(25px);
+  border-radius: 10px;
+}
+.contact-us-section .uk-position-relative input::-webkit-input-placeholder, .contact-us-section .uk-position-relative textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+.contact-us-section .uk-position-relative input:focus, .contact-us-section .uk-position-relative input:not(:placeholder-shown), .contact-us-section .uk-position-relative textarea:focus, .contact-us-section .uk-position-relative textarea:not(:placeholder-shown) {
+  padding-top: 15px;
+}
+.contact-us-section .uk-position-relative input:focus + label, .contact-us-section .uk-position-relative input:not(:placeholder-shown) + label, .contact-us-section .uk-position-relative textarea:focus + label, .contact-us-section .uk-position-relative textarea:not(:placeholder-shown) + label {
+  color: #F44708;
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  font-weight: 300;
+  font-size: 12px;
+}
+.contact-us-section .uk-position-relative input:focus, .contact-us-section .uk-position-relative input:active, .contact-us-section .uk-position-relative textarea:focus, .contact-us-section .uk-position-relative textarea:active {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 70px rgba(255, 255, 255, 0.9);
+}
+.contact-us-section .uk-position-relative input.is-invalid, .contact-us-section .uk-position-relative textarea.is-invalid {
+  border: 2px solid #E91400;
+  padding-right: calc(1.5em + .75rem);
+  background-image: url("img/icons/form-error-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(.375em + .1875rem) center;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+.contact-us-section .uk-position-relative input.is-invalid + label, .contact-us-section .uk-position-relative textarea.is-invalid + label {
+  color: #235001;
+}
+.contact-us-section .uk-position-relative label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  padding: 16px;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  color: #fff;
+}
+.contact-us-section input[type=checkbox] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+.contact-us-section input[type=checkbox]:checked {
+  background-color: transparent;
+}
+.contact-us-section input[type=checkbox] + label {
+  font-size: 12px;
+  margin-top: -6px;
+}
+.contact-us-section button {
+  background: linear-gradient(263.02deg, #F44708 37.26%, #BB0000 100.28%);
+  box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  border-radius: 16px;
+  backdrop-filter: blur(25px);
+}
+
+footer {
+  border-top: 3px solid #fff;
 }
 
 .ball {

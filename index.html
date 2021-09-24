@@ -110,7 +110,7 @@
 
             </section>
             <section class="trusted-us-section uk-padding-large uk-padding-remove-horizontal">
-                <h2 class="test uk-text-right uk-text-uppercase">
+                <h2 class="test uk-text-right@s uk-text-center uk-text-uppercase">
                     trusted us
                 </h2>
                 <div class="uk-flex uk-flex-around@m uk-flex-center uk-flex-wrap">
@@ -177,6 +177,50 @@
                     </div>
                 </div>
             </section>
+            <section class="contact-us-section uk-padding">
+                <h2 class="uk-text-right uk-padding-large uk-padding-remove-horizontal">
+                    Tell us about your great idea <br>
+                    <span class="uk-text-uppercase">WE’LL MAKE THE REST.</span>
+                </h2>
+                <form class="uk-grid-small uk-grid uk-scrollspy-inview uk-width-2xlarge uk-margin-auto" uk-grid>
+                    <div class="uk-width-1-2@s uk-position-relative uk-first-column">
+                        <input class="uk-input uk-form-large is-invalid" type="text" id="first-name" placeholder="Imię" required>
+                        <label for="first-name">Imię</label>
+                        <div class="invalid-feedback">Please provide a valid city.</div>
+                    </div>
+                    <div class="uk-width-1-2@s uk-position-relative">
+                        <input class="uk-input uk-form-large" type="text" id="last-name" placeholder="Nazwisko">
+                        <label for="last-name">Nazwisko</label>
+                    </div>
+                    <div class="uk-width-1-2@s uk-position-relative uk-grid-margin uk-first-column">
+                        <input class="uk-input uk-form-large" type="number" id="phone" placeholder="Telefon">
+                        <label for="phone">Telefon</label>
+                    </div>
+                    <div class="uk-width-1-2@s uk-position-relative uk-grid-margin">
+                        <input class="uk-input uk-form-large" type="email" id="email" placeholder="Adres e-mail" required="">
+                        <label for="email">Adres e-mail</label>
+                    </div>
+                    <div class="uk-width-1-1 uk-position-relative uk-grid-margin uk-first-column">
+                        <textarea class="uk-textarea" id="message" rows="8" placeholder="Twoja wiadomość..." required=""></textarea>
+                        <label for="message">Twoja wiadomość...</label>
+                    </div>
+                    <div class="uk-width-1-1 uk-flex uk-margin-top uk-grid-margin uk-first-column">
+                        <input class="uk-checkbox" type="checkbox" id="acceptance" required="">
+                        <label for="acceptance">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque diam ligula pharetra amet vel ullamcorper sit nisi ut. Ultricies justo, magna eu sagittis sagittis est. Sit magna quisque elit, velit phasellus mauris eget. Diam egestas odio arcu et et porttitor risus rhoncus.
+                        </label>
+                    </div>
+
+                    <div class="uk-width-1-1 uk-text-center uk-margin-large-top uk-grid-margin uk-first-column">
+                        <button type="submit" class="uk-button uk-button-primary">Wyślij</button>
+                    </div>
+                </form>
+            </section>
+
+            <footer class="uk-padding-large uk-text-center">
+                footer here
+            </footer>
+
         </div>
     </div>
 </body>
