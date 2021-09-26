@@ -21,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kancelaria/web/app/themes/antise" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -89,7 +89,10 @@
       <workItem from="1632483931717" duration="1792000" />
       <workItem from="1632486075817" duration="2213000" />
       <workItem from="1632490295198" duration="1778000" />
-      <workItem from="1632492102755" duration="494000" />
+      <workItem from="1632492102755" duration="1311000" />
+      <workItem from="1632659946392" duration="1398000" />
+      <workItem from="1632661760104" duration="1785000" />
+      <workItem from="1632663577873" duration="1343000" />
     </task>
     <servers />
   </component>
